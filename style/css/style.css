@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+:root {
+  --main-deep-color: #f4c553;
+  --main-light-color: #fcfaeb;
+  --second-deep-color: #ed9f4a;
+  --third-deep-color: #163a1e;
+  --second-light-color: #dfeddc;
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Hind", sans-serif; }
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--second-light-color)), to(var(--main-deep-color)));
+  background-image: linear-gradient(var(--second-light-color) 50%, var(--main-deep-color));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.containerLogIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 260px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: var(--main-deep-color);
+  -webkit-box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px; }
+  .containerLogIn__text {
+    font-family: var(--main-font);
+    font-size: 2.25em;
+    margin-top: 20px;
+    text-align: center; }
+  .containerLogIn__inside {
+    padding: 20px 20px; }
+
+.formLogin {
+  font-family: var(--second-font); }
+  .formLogin__inputEmail {
+    width: 95%;
+    height: 20px;
+    margin-bottom: 25px;
+    background-color: var(--second-light-color);
+    border: none; }
+  .formLogin__inputPassword {
+    width: 95%;
+    height: 20px;
+    margin-bottom: 5px;
+    background-color: var(--second-light-color);
+    border: none; }
+  .formLogin__anchor {
+    font-size: 0.625em;
+    font-weight: 600;
+    color: var(--second-light-color);
+    border-bottom: 1px solid var(--second-light-color);
+    text-decoration: none; }
+    .formLogin__anchor:hover {
+      color: var(--third-deep-color);
+      border: none; }
+  .formLogin__button {
+    width: 95%;
+    height: 25px;
+    font-family: var(--main-font);
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    color: var(--main-light-color);
+    background-color: var(--second-deep-color);
+    -webkit-box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer; }
+    .formLogin__button:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+/*# sourceMappingURL=style.css.map */

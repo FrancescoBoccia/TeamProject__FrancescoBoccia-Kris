@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+
+:root {
+  // Colors
+  --main-deep-color: #f4c553;
+  --main-light-color: #fcfaeb;
+  --second-deep-color: #ed9f4a;
+  --third-deep-color: #163a1e;
+  --second-light-color: #dfeddc;
+
+  // Fonts
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Hind", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    var(--second-light-color) 50%,
+    var(--main-deep-color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// CONTAINER LOGIN
+
+.containerLogIn {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: var(--main-deep-color);
+  box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
+  &__text {
+    font-family: var(--main-font);
+    font-size: 2.25em;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__inside {
+    padding: 20px 20px;
+  }
+}
+
+.formLogin {
+  font-family: var(--second-font);
+  &__inputEmail {
+    width: 95%;
+    height: 20px;
+    margin-bottom: 25px;
+    background-color: var(--second-light-color);
+    border: none;
+  }
+  &__inputPassword {
+    width: 95%;
+    height: 20px;
+    margin-bottom: 5px;
+    background-color: var(--second-light-color);
+    border: none;
+  }
+  &__anchor {
+    font-size: 0.625em;
+    font-weight: 600;
+    color: var(--second-light-color);
+    border-bottom: 1px solid var(--second-light-color);
+    text-decoration: none;
+    &:hover {
+      color: var(--third-deep-color);
+      border: none;
+    }
+  }
+  &__button {
+    width: 95%;
+    height: 25px;
+    font-family: var(--main-font);
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    color: var(--main-light-color);
+    background-color: var(--second-deep-color);
+    box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}
