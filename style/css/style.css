@@ -26,7 +26,7 @@ html {
       -ms-flex-align: center;
           align-items: center; }
 
-.containerLogIn {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,43 +35,44 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 260px;
-  height: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   border-radius: 10px;
   background-color: var(--main-deep-color);
   -webkit-box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px; }
-  .containerLogIn__text {
+  .container__text {
     font-family: var(--main-font);
     font-size: 2.25em;
     margin-top: 20px;
     text-align: center; }
-  .containerLogIn__inside {
+  .container__inside {
     padding: 20px 20px; }
 
-.formLogin {
+.form {
   font-family: var(--second-font); }
-  .formLogin__inputEmail {
+  .form__inputEmail, .form__inputPassword, .form__inputFirstName, .form__inputLastName {
     width: 95%;
     height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-color: var(--second-light-color);
     border: none; }
-  .formLogin__inputPassword {
-    width: 95%;
-    height: 20px;
-    margin-bottom: 5px;
-    background-color: var(--second-light-color);
-    border: none; }
-  .formLogin__anchor {
+    .form__inputEmail:focus, .form__inputPassword:focus, .form__inputFirstName:focus, .form__inputLastName:focus {
+      outline: none;
+      border: 2px solid var(--third-deep-color); }
+  .form__inputPassword {
+    margin-bottom: 5px; }
+  .form__anchor {
     font-size: 0.625em;
     font-weight: 600;
     color: var(--second-light-color);
     border-bottom: 1px solid var(--second-light-color);
     text-decoration: none; }
-    .formLogin__anchor:hover {
+    .form__anchor:hover {
       color: var(--third-deep-color);
       border: none; }
-  .formLogin__button {
+  .form__button {
     width: 95%;
     height: 25px;
     font-family: var(--main-font);
@@ -83,7 +84,7 @@ html {
     -webkit-box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer; }
-    .formLogin__button:hover {
+    .form__button:hover {
       -webkit-transform: scale(1.05);
               transform: scale(1.05); }
 /*# sourceMappingURL=style.css.map */

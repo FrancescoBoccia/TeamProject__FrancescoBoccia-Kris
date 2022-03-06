@@ -30,11 +30,11 @@ html {
 
 // CONTAINER LOGIN
 
-.containerLogIn {
+.container {
   display: flex;
   flex-direction: column;
   width: 260px;
-  height: 300px;
+  height: max-content;
   border-radius: 10px;
   background-color: var(--main-deep-color);
   box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
@@ -49,21 +49,24 @@ html {
   }
 }
 
-.formLogin {
+.form {
   font-family: var(--second-font);
-  &__inputEmail {
+  &__inputEmail,
+  &__inputPassword,
+  &__inputFirstName,
+  &__inputLastName {
     width: 95%;
     height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-color: var(--second-light-color);
     border: none;
+    &:focus {
+      outline: none;
+      border: 2px solid var(--third-deep-color);
+    }
   }
   &__inputPassword {
-    width: 95%;
-    height: 20px;
     margin-bottom: 5px;
-    background-color: var(--second-light-color);
-    border: none;
   }
   &__anchor {
     font-size: 0.625em;
@@ -87,8 +90,10 @@ html {
     background-color: var(--second-deep-color);
     box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transform: scale(1.05);
     }
   }
 }
+
+// CONTAINER SIGN UP
