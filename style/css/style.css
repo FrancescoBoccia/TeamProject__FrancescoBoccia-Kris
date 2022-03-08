@@ -15,16 +15,7 @@ html {
   padding: 0;
   margin: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--second-light-color)), to(var(--main-deep-color)));
-  background-image: linear-gradient(var(--second-light-color) 50%, var(--main-deep-color));
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  background-image: linear-gradient(var(--second-light-color) 50%, var(--main-deep-color)); }
 
 .container {
   display: -webkit-box;
@@ -35,10 +26,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 260px;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   border-radius: 10px;
+  margin: auto;
   background-color: var(--main-deep-color);
   -webkit-box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px; }
@@ -49,6 +43,8 @@ html {
     text-align: center; }
   .container__inside {
     padding: 20px 20px; }
+  .container__logIn {
+    display: none; }
 
 .form {
   font-family: var(--second-font); }
@@ -87,4 +83,104 @@ html {
     .form__button:hover {
       -webkit-transform: scale(1.05);
               transform: scale(1.05); }
+
+.container__signUp {
+  display: none; }
+
+.mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  background-color: var(--third-deep-color); }
+  .mainPage__logoHeader {
+    height: 30px;
+    width: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px; }
+  .mainPage__inputSearch {
+    width: calc(60% - 1rem);
+    font-family: var(--second-font);
+    padding-left: 5px;
+    border: none;
+    background-color: var(--main-light-color); }
+    .mainPage__inputSearch:focus {
+      outline: none; }
+
+.userIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem; }
+  .userIcon__profileImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .userIcon__image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25px;
+    height: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle; }
+
+.burgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px; }
+  .burgerMenu:hover > .line1 {
+    position: absolute;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    -webkit-transition-duration: .7s;
+            transition-duration: .7s; }
+  .burgerMenu:hover > .line2 {
+    position: absolute;
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s; }
+  .burgerMenu:hover > .line3 {
+    display: none; }
+  .burgerMenu__line {
+    width: 1.3rem;
+    height: 1.5px;
+    background-color: var(--main-deep-color); }
 /*# sourceMappingURL=style.css.map */

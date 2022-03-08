@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/css/style.css" />
-    <title>Log In User</title>
+    <link rel="shortcut icon" type="image" href="/mock up/Logo.png" />
+    <title>Log In</title>
   </head>
   <body>
     <!-- CONTAINER LOGIN -->
 
-    <div class="container">
+    <div class="container container__logIn">
       <div class="container__text">LOG IN</div>
       <div class="container__inside">
         <form class="form">
@@ -29,6 +30,55 @@
           >
         </div>
         <button type="button" class="form__button">LOG IN</button>
+      </div>
+    </div>
+
+    <!-- SIGN UP CONTAINER -->
+
+    <div class="container container__signUp">
+      <div class="container__text">SIGN UP</div>
+      <div class="container__inside">
+        <form class="form" autocomplete="on">
+          <label for="fname">First Name</label>
+          <input type="text" class="form__inputFirstName" autocomplete="nope" />
+          <label for="lname">Last Name</label>
+          <input type="text" class="form__inputLastName" autocomplete="nope" />
+          <label for="email">E-mail</label>
+          <input type="email" class="form__inputEmail" />
+          <label for="password">Password</label>
+          <input type="password" class="form__inputPassword" />
+        </form>
+        <div>
+          <a
+            class="form__anchor"
+            href="/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Do You Already Have an Account?</a
+          >
+        </div>
+        <button type="button" class="form__button">SIGN UP</button>
+      </div>
+    </div>
+
+    <!-- Main Page  -->
+    <div class="mainPage">
+      <img class="mainPage__logoHeader" src="/mock up/logo.png" alt="Logo" />
+      <input
+        class="mainPage__inputSearch"
+        type="text"
+        placeholder="Search your friend..."
+      />
+      <div class="userIcon">
+        <div class="userIcon__frame">
+          <img class="userIcon__image" src="/mock up/bella 1 faccia.jpg" alt="" />
+        </div>
+
+        <div class="burgerMenu">
+          <div class="burgerMenu__line line1"></div>
+          <div class="burgerMenu__line line2"></div>
+          <div class="burgerMenu__line line3"></div>
+        </div>
       </div>
     </div>
   </body>

@@ -23,9 +23,6 @@ html {
     var(--second-light-color) 50%,
     var(--main-deep-color)
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 // CONTAINER LOGIN
@@ -34,8 +31,10 @@ html {
   display: flex;
   flex-direction: column;
   width: 260px;
+  transform: translate(0, 50%);
   height: max-content;
   border-radius: 10px;
+  margin: auto;
   background-color: var(--main-deep-color);
   box-shadow: rgba(100, 50, 111, 0.2) 0px 7px 29px 0px;
   &__text {
@@ -46,6 +45,9 @@ html {
   }
   &__inside {
     padding: 20px 20px;
+  }
+  &__logIn {
+    display: none;
   }
 }
 
@@ -97,3 +99,84 @@ html {
 }
 
 // CONTAINER SIGN UP
+
+.container__signUp {
+  display: none;
+}
+
+// MAIN PAGE
+
+.mainPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  background-color: var(--third-deep-color);
+  &__logoHeader {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    border-radius: 3px;
+  }
+  &__inputSearch {
+    width: calc(60% - 1rem);
+    font-family: var(--second-font);
+    padding-left: 5px;
+    border: none;
+    background-color: var(--main-light-color);
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.userIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  &__profileImage {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__image {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+.burgerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  &:hover > .line1 {
+    position: absolute;
+    transform: rotate(40deg);
+    transition-duration: .7s;
+  }
+  &:hover > .line2 {
+    position: absolute;
+    transform: rotate(-40deg);
+    transition-duration: .5s;
+  }
+  &:hover > .line3 {
+    display: none;
+  }
+  &__line {
+    width: 1.3rem;
+    height: 1.5px;
+    background-color: var(--main-deep-color);
+  }
+}
