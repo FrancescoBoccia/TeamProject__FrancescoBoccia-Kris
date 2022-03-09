@@ -206,7 +206,9 @@ body {
   height: calc(25% - 1rem);
   margin: 1rem;
   border-radius: 5px;
-  background-color: var(--main-light-color); }
+  background-color: var(--main-light-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px; }
   .post__inside {
     height: 75%;
     width: 35rem;
@@ -251,4 +253,56 @@ body {
   .postAction__postSubmit {
     font-family: var(--main-font);
     margin-right: 1rem; }
+
+.showMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none; }
+  .showMore__button {
+    font-family: var(--main-font);
+    padding: 0.4rem;
+    color: white;
+    background-color: var(--main-deep-color);
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(155, 35, 35, 0.15) 1.95px 1.95px 1.6px;
+            box-shadow: rgba(155, 35, 35, 0.15) 1.95px 1.95px 1.6px; }
+    .showMore__button > span {
+      font-size: 1rem;
+      vertical-align: middle; }
+
+.topUserContainer {
+  max-width: 555px;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--main-deep-color);
+  background-color: var(--main-light-color); }
+  .topUserContainer__title {
+    font-size: 1.5em;
+    font-family: var(--main-font);
+    padding: 0.5rem;
+    background-color: var(--second-light-color);
+    text-indent: 5px; }
+  .topUserContainer__userList {
+    font-family: var(--main-font); }
+  .topUserContainer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .4rem;
+    margin: .2rem; }
+  .topUserContainer__points {
+    width: 1.5rem;
+    margin-right: 1rem;
+    color: var(--main-deep-color); }
 /*# sourceMappingURL=style.css.map */
