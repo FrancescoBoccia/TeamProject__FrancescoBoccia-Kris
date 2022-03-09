@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/css/style.css" />
+
     <link rel="shortcut icon" type="image" href="/mock up/Logo.png" />
     <title>Log In</title>
   </head>
@@ -16,9 +17,9 @@
       <div class="container__inside">
         <form class="form">
           <label for="email">E-mail</label>
-          <input type="email" class="form__inputEmail" />
+          <input type="email" class="form__inputEmail" required="" />
           <label for="password">Password</label>
-          <input type="password" class="form__inputPassword" />
+          <input type="password" class="form__inputPassword" required="" />
         </form>
         <div>
           <a
@@ -40,13 +41,23 @@
       <div class="container__inside">
         <form class="form" autocomplete="on">
           <label for="fname">First Name</label>
-          <input type="text" class="form__inputFirstName" autocomplete="nope" />
+          <input
+            type="text"
+            class="form__inputFirstName"
+            autocomplete="nope"
+            required=""
+          />
           <label for="lname">Last Name</label>
-          <input type="text" class="form__inputLastName" autocomplete="nope" />
+          <input
+            type="text"
+            class="form__inputLastName"
+            autocomplete="nope"
+            required=""
+          />
           <label for="email">E-mail</label>
-          <input type="email" class="form__inputEmail" />
+          <input type="email" class="form__inputEmail" required="" />
           <label for="password">Password</label>
-          <input type="password" class="form__inputPassword" />
+          <input type="password" class="form__inputPassword" required="" />
         </form>
         <div>
           <a
@@ -71,7 +82,11 @@
       />
       <div class="userIcon">
         <div class="userIcon__frame">
-          <img class="userIcon__image" src="/mock up/bella 1 faccia.jpg" alt="" />
+          <img
+            class="userIcon__image"
+            src="/mock up/bella 1 faccia.jpg"
+            alt=""
+          />
         </div>
 
         <div class="burgerMenu">
@@ -79,6 +94,29 @@
           <div class="burgerMenu__line line2"></div>
           <div class="burgerMenu__line line3"></div>
         </div>
+      </div>
+    </div>
+
+    <!-- Post Section -->
+    
+    <div class="post">
+      <input
+        class="post__inside"
+        type="text"
+        placeholder="Write something..."
+        name="post"
+      />
+      <div class="postAction">
+        <div class="postAction__style postAction__image">
+          <img class="postAction__icons postAction__imageIcon" src="/Icons/Image Vector.png" />
+        </div>
+        <span class="postAction__span">|</span>
+        <div class="postAction__style postAction__tagUser">
+          <img class="postAction__icons" src="/Icons/Tag.png" />
+
+        </div>
+        <span class="postAction__span">|</span>
+        <div class="postAction__style postAction__postSubmit">Post</div>
       </div>
     </div>
   </body>
