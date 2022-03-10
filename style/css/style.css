@@ -278,18 +278,34 @@ body {
       font-size: 1rem;
       vertical-align: middle; }
 
+.showUserContainer {
+  margin: 5rem 0.3rem 0 0;
+  float: right;
+  z-index: -1; }
+
 .topUserContainer {
+  display: none;
+  position: relative;
   max-width: 555px;
   margin: 1rem;
   border-radius: 5px;
   border: 1px solid var(--main-deep-color);
-  background-color: var(--main-light-color); }
+  background-color: var(--main-light-color);
+  z-index: 1; }
   .topUserContainer__title {
     font-size: 1.5em;
     font-family: var(--main-font);
     padding: 0.5rem;
     background-color: var(--second-light-color);
     text-indent: 5px; }
+    .topUserContainer__title__span {
+      font-size: 0.6em;
+      padding: 0.2rem;
+      border-radius: 50%;
+      float: right;
+      cursor: pointer; }
+      .topUserContainer__title__span:hover {
+        color: var(--main-deep-color); }
   .topUserContainer__userList {
     font-family: var(--main-font); }
   .topUserContainer__list {
@@ -299,10 +315,53 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: .4rem;
-    margin: .2rem; }
+    padding: 0.4rem;
+    margin: 0.2rem; }
   .topUserContainer__points {
     width: 1.5rem;
     margin-right: 1rem;
     color: var(--main-deep-color); }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.5em;
+  font-size: 0.8em;
+  padding: 1rem;
+  background-color: var(--third-deep-color);
+  color: var(--main-light-color); }
+  .footer__image {
+    height: 3rem;
+    width: 3rem;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .footer__images {
+    height: 1.5rem;
+    width: 1.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle; }
+  .footer__title {
+    font-family: var(--main-font); }
+  .footer .footer__information__list {
+    font-family: var(--second-font);
+    margin: 0.1rem; }
+  .footer .footer__developers__pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 0.5rem; }
 /*# sourceMappingURL=style.css.map */
