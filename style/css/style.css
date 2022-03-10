@@ -14,9 +14,11 @@ body {
   height: 100%;
   width: 100%;
   padding: 0;
-  margin: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--second-light-color)), to(var(--main-deep-color)));
-  background-image: linear-gradient(var(--second-light-color) 50%, var(--main-deep-color)); }
+  margin: 0; }
+
+.websiteBackground {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, var(--main-deep-color)), color-stop(60%, var(--second-light-color)));
+  background-image: linear-gradient(var(--main-deep-color) 30%, var(--second-light-color) 60%); }
 
 .container {
   display: -webkit-box;
@@ -149,7 +151,8 @@ body {
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    vertical-align: middle; }
+    vertical-align: middle;
+    cursor: pointer; }
 
 .burgerMenu {
   display: -webkit-box;
@@ -328,14 +331,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3.5em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
   font-size: 0.8em;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   background-color: var(--third-deep-color);
   color: var(--main-light-color); }
+  .footer__arrowUp {
+    position: absolute;
+    right: 0;
+    bottom: 8rem;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--main-deep-color);
+    line-height: 1.3rem;
+    vertical-align: middle; }
   .footer__image {
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     -o-object-fit: contain;
        object-fit: contain; }
   .footer__images {
@@ -364,4 +383,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 0.5rem; }
+
+.userProfileBody {
+  background-image: var(--second-light-color); }
 /*# sourceMappingURL=style.css.map */
